@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid 04</title>
+    <style>
+        main {
+            background-color: white;
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            grid-template-areas:
+                "A B"
+                "C D";
+            justify-content: center;
+            align-content: center;
+            gap: 1.5%;
+        }
+
+        section {
+            width: 55vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #866c6c;
+        }
+
+        h1 {
+            font-size: 70px;
+            color: black;
+        }
+
+        .A {
+            grid-area: A;
+            height: 35vh;
+        }
+
+        .B {
+            grid-area: B;
+            height: 35vh;
+        }
+
+        .C {
+            grid-area: C;
+            height: 80vh;
+        }
+
+        .D {
+            grid-area: D;
+            height: 80vh;
+            display: grid;
+            grid-template-areas:
+                "E E"
+                "F G";
+            gap: 2vw;
+            justify-content: center;
+            align-content: center;
+        }
+
+        .E {
+            grid-area: E;
+            width: 40vw;
+        }
+
+        .F {
+            grid-area: F;
+            width: 20vw;
+        }
+
+        .G {
+            grid-area: G;
+            width: 20vw;
+        }
+
+        div {
+            background-color: rgb(44, 44, 44);
+            height: 20vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h2 {
+            font-size: 40px;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <section class="A">
+            <h1>A</h1>
+        </section>
+        <section class="B">
+            <h1>B</h1>
+        </section>
+        <section class="C">
+            <h1>C</h1>
+        </section>
+        <section class="D">
+            <div class="E">
+                <h2>E</h2>
+            </div>
+            <div class="F">
+                <h2>F</h2>
+            </div>
+            <div class="G">
+                <h2>G</h2>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

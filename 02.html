@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>02</title>
+    <style>
+        main {
+            background-color: white;
+            width: 100vw;
+            height: 100vh;
+            display: grid;
+            grid-template-areas:
+                "A A B"
+                "C D B";
+            justify-content: center;
+            align-content: center;
+            gap: 4vh;
+        }
+
+        .A {
+            grid-area: A;
+            width: 50vw;
+            height: 35vh;
+        }
+
+        .B {
+            grid-area: B;
+            width: 20vw;
+            height: 82vh;
+        }
+
+        .C {
+            grid-area: C;
+            width: 19vw;
+            height: 35vh;
+        }
+
+        .D {
+            grid-area: D;
+            width: 19vw;
+            height: 35vh;
+        }
+
+        div {
+            background-color:grey;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h2 {
+            font-size: 90px;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="A">
+            <h2>A</h2>
+        </div>
+        <div class="B">
+            <h2>B</h2>
+        </div>
+        <div class="C">
+            <h2>C</h2>
+        </div>
+        <div class="D">
+            <h2>D</h2>
+        </div>
+    </main>
+</body>
+
+</html>
